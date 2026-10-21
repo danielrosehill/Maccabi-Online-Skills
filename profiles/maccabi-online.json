@@ -1,0 +1,250 @@
+{
+  "id": "maccabi-online",
+  "name": "Maccabi Online (מכבי אונליין) — member self-service portal",
+  "host": "online.maccabi4u.co.il",
+  "language": "he",
+  "direction": "rtl",
+  "verified": "2026-10-21",
+  "verified_how": "Each route below with status V was loaded in a signed-in Chrome session (Claude in Chrome, desktop width) and its H1 and controls read. No form was submitted. Routes marked U were supplied by a user but not opened by the agent.",
+  "requires_session": true,
+  "session": {
+    "login": "Out of scope for this version. The user signs in themselves; skills assume an authenticated Chrome profile.",
+    "signed_in_signals": [
+      "header shows a 'התנתקות' (log out) link",
+      "header shows the patient switcher button whose text starts 'מציג פרטים של'"
+    ],
+    "not_signed_in_signals": [
+      "redirect to a login page (URL or H1 mentions כניסה / login)",
+      "no 'התנתקות' link after hydration"
+    ]
+  },
+  "access": {
+    "default_route": "claude-in-chrome (the user's own signed-in profile)",
+    "plain_fetch": "Useless for the portal (session-bound). For serguide.maccabi4u.co.il a plain fetch returned a bot-wall page at HTTP 200 on 2026-10-21 — use the browser.",
+    "hydration": "Single-page app. Content renders 2–5 s after navigation; the requests-status lobby is slower. An empty page read straight after navigation is NOT an empty result — wait and read again."
+  },
+  "url_grammar": {
+    "base": "https://online.maccabi4u.co.il/sonline/",
+    "rule": "Every portal route is /sonline/<section>/<page>/. Typing a path WITHOUT the /sonline/ prefix (which is how the side-menu hrefs are written) lands on a 404 page: H1 'לא מצאנו את העמוד שחיפשת'. With the prefix, direct navigation works.",
+    "never_record": [
+      "query parameters carrying identifiers: relative=<hash>, sr_id=, req=<number>",
+      "any path segment of 6+ digits (member/ID numbers appear in some menu links, e.g. the Maccabi Pharm token link)",
+      "/go/<url-encoded> wrappers — record the decoded inner path only, without its query string"
+    ]
+  },
+  "page_identity": {
+    "h1_pattern": "<page title> - <selected member's first name>",
+    "exceptions": {
+      "vaccinations": "H1 is just 'חיסונים' with no member suffix; each record line reads 'חיסונים עבור <name>'."
+    },
+    "not_found_h1": "לא מצאנו את העמוד שחיפשת"
+  },
+  "patient_switcher": {
+    "find": "header button whose accessible name starts 'מציג פרטים של' (Showing details of)",
+    "options": "Opening it lists one button per linked member (account holder plus linked children/dependants). Each button's text is first name immediately followed by the member's ID number.",
+    "effect": "Changes whose record every page shows until switched back.",
+    "assert": "After switching, the H1 suffix and the switcher label both carry the chosen member's first name.",
+    "status": "U — options read 2026-10-21, switch not exercised"
+  },
+  "routes": {
+    "home": {
+      "path": "/sonline/homepage/NotificationAndUpdates/",
+      "h1": null,
+      "contents": "Quick actions row and tabs: עדכונים שלא קראת, הפניות בתוקף, תרופות ומרשמים, תורים עתידיים",
+      "status": "V 2026-10-21"
+    },
+    "doctor_messages": {
+      "path": "/sonline/communicationWithDoctor/Lobby/",
+      "h1": "בקשות והודעות מרופאים/ות",
+      "contents": "Inbox of requests to and messages from doctors and the office. Filters: כל הבקשות, הודעות מהרופא/ה שלך, שאלות לרופא/ה; checkbox 'הציגו לי רק הודעות שלא קראתי או לא אישרת'. Button '+ בקשה חדשה'.",
+      "deep_link": "?dl=true&req=<request id> opens one item — the id is account data, never record a real one",
+      "write_controls": ["קראתי את ההודעה (marks a message read/acknowledged)"],
+      "status": "V 2026-10-21"
+    },
+    "new_request": {
+      "path": "/sonline/communicationWithDoctor/NewRequest/",
+      "h1": "שליחת בקשה חדשה",
+      "prompt": "איך אפשר לעזור?",
+      "options": [
+        {"label": "איתור מסמכים בתיק שלך", "covers": "סיכום ביקור, הפניה, אישור רפואי ותוצאות בדיקות", "note": "self-service document finder, not a message"},
+        {"label": "שליחת בקשה למשרד בנושאים", "covers": "התחייבות (טופס 17), אישור מקדים לתרופה, איתור שירות וזימון תורים והעתקי מסמכים", "note": "goes to the clinic office/administration"},
+        {"label": "שליחת בקשה לרופא/ה בנושאים", "covers": "חידוש ובקשה למרשם, אישור מחלה, שאלה לרופא/ה, סיכום מצב רפואי והפניה", "note": "the usual choice — a message to the doctor"}
+      ],
+      "limits": "Requests to the doctor are subject to a per-quarter quota (stated by the user; the exact number is shown in the flow, not recorded here).",
+      "status": "V 2026-10-21 (landing and options); downstream form not opened"
+    },
+    "new_appointment": {
+      "path": "/sonline/appointmentOrder/NewAppointment/",
+      "h1": "זימון תור חדש",
+      "prompt": "מה ברצונך לעשות?",
+      "options": [
+        {"label": "זימון תור לרופאים/ות והמטפלים/ות אצלם ביקרת בשנה האחרונה", "covers": "book from the member's own list of clinicians seen in the last year"},
+        {"label": "חיפוש ואיתור שירותי בריאות", "covers": "search doctors, therapists, labs, urgent care, vaccination, medical centres"}
+      ],
+      "seasonal_banner": "A flu-vaccine booking banner ('זימון תור לחיסון שפעת') appeared above the options on 2026-10-21; seasonal, do not rely on it.",
+      "status": "V 2026-10-21 (landing); booking flow not exercised"
+    },
+    "future_appointments": {
+      "path": "/sonline/appointmentOrder/FutureAppointments/Lobby/",
+      "h1": "תורים עתידיים",
+      "contents": "Cards: member, date, time, clinic type, clinician and location. Filter 'סינון לפי חברה'. Page text says to click the appointment details to view or cancel it.",
+      "write_controls": ["cancel appointment (inside the appointment details)"],
+      "status": "V 2026-10-21"
+    },
+    "past_visits": {
+      "path": "/sonline/appointmentOrder/PastVisits/Lobby/",
+      "h1": "ביקורים קודמים",
+      "status": "U — seen in menu only"
+    },
+    "request_status": {
+      "path": "/sonline/requestsAndApprovals/StatusRequest/Lobby/",
+      "h1": "החזרים אישורים והתחייבויות",
+      "contents": "List of administrative requests (התחייבות / Form 17, refunds, medicine pre-approvals) with type, date submitted, status, and attachment icon. Filter 'מיין לפי' plus a 'הגשת בקשה חדשה' dropdown.",
+      "traps": ["Renders slower than other pages — a first read can be empty."],
+      "status": "V 2026-10-21"
+    },
+    "obligation_request": {
+      "path": "/sonline/requestsAndApprovals/ObligationRequest/Triage/",
+      "h1": "בקשת התחייבות",
+      "prompt": "לאיזה שירות מבוקשת ההתחייבות?",
+      "options": [
+        "מרפאות חוץ ומכונים (ניתוחים ואשפוזים)",
+        "דימות (PET-CT, CT, MRI)",
+        "ביקור במיון או פינוי אמבולנס",
+        "בקשה לאביזר ניידות",
+        "אחר"
+      ],
+      "next": "המשך",
+      "status": "V 2026-10-21 (triage options); later steps not opened"
+    },
+    "medicine_preapproval": {
+      "path": "/sonline/requestsAndApprovals/MedicineRequest/New/",
+      "h1": null,
+      "status": "U — seen in menu only ('בקשה לאישור מקדים לתרופה')"
+    },
+    "refund_request": {
+      "path": "/sonline/requestsAndApprovals/RefundRequest/TopicSelect/",
+      "h1": "בקשה להחזר עבור החזרים כספיים",
+      "prompt": "עבור איזה שירות ברצונך לקבל החזר?",
+      "limit": "Invoices up to 6,000 ₪ (page text: 'ניתן להגיש בקשה להחזר כספי לחשבוניות בסכום שאינו עולה על 6,000 ש״ח')",
+      "requirements": "Original receipt and tax invoice plus supporting documents as required; eligibility is assessed from the data entered.",
+      "options": [
+        "רפואת נשים / חבילת הריון ולידה",
+        "ילדים / התפתחות הילד",
+        "התייעצות עם רופא/ה",
+        "הסעות ונסיעות",
+        "פיזיותרפיה נשימתית",
+        "רפואת ספורט",
+        "שיניים פה ולסת",
+        "הבראה / החלמה ושיקום",
+        "אביזרים רפואיים",
+        "אחר",
+        "תרופות"
+      ],
+      "next": "המשך",
+      "status": "V 2026-10-21 (topic options)"
+    },
+    "no_card_visit": {
+      "path": "/sonline/directorship/NoCardVisit/Lobby/",
+      "h1": "ביקור ללא כרטיס",
+      "prompt": "בחר סיבת הזמנת ביקור ללא כרטיס",
+      "options": ["שכחתי כרטיס", "הכרטיס אבד", "כרטיס לא תקין", "הכרטיס נגנב", "אחר"],
+      "submit": "לקבלת אישור",
+      "terms": [
+        "Approval is valid for 14 hours and is registered in Maccabi's systems — request it close to the visit.",
+        "Billed exactly as a card visit (quarterly levies apply where they would).",
+        "Does not book an appointment.",
+        "Not valid for labs or imaging institutes."
+      ],
+      "status": "V 2026-10-21 (landing); approval not requested"
+    },
+    "travel_insurance": {
+      "path": "/sonline/directorship/travelabroadinsurance/",
+      "behaviour": "Redirects to the travel-insurance purchase flow and passes the member's medical record along (per the user). Opening it shares data with a third party.",
+      "status": "U — deliberately not opened"
+    },
+    "test_results": {
+      "path": "/sonline/testsResults/TestsResults/lobby/?quickAction=1",
+      "h1": "תוצאות בדיקות",
+      "tabs": ["תוצאות בדיקות", "תוצאות מעבדה אחרונות", "בדיקות במעקב שלי"],
+      "filters": ["סוג בדיקה", "לפי שנים", "נקה סינון"],
+      "contents": "Cards: member, test/visit title, date performed, PDF ('לצפייה') button.",
+      "status": "V 2026-10-21"
+    },
+    "medications": {
+      "path": "/sonline/medicalfile/Medications/Lobby/",
+      "h1": "התרופות והמרשמים",
+      "tabs": ["כל התרופות", "מרשמים בתוקף", "מרשמים לחידוש", "היסטוריית תרופות"],
+      "toggles": ["הצג תרופות קבועות"],
+      "links": ["בדיקת מלאי במכבי פארם", "הזמנת תרופות", "הדפסת דוח היסטוריית תרופות"],
+      "contents": "Cards: member, status (e.g. נופק / בתוקף), medication name in Latin capitals, prescriber and specialty, date; chevron expands details.",
+      "traps": ["The tabs are styled links, not role=tab — locate them by visible text."],
+      "status": "V 2026-10-21"
+    },
+    "medication_purchases": {
+      "path": "/sonline/medicalfile/medications/MedicationsHistory/?purchased=true",
+      "h1": "התרופות והמרשמים",
+      "contents": "Same page with the 'היסטוריית תרופות' tab selected and the prescription-status filter set to 'תרופות שנרכשו'. View ('לצפייה') and print ('להדפסה') controls for the report.",
+      "status": "V 2026-10-21"
+    },
+    "visit_summaries": {
+      "path": "/sonline/appointmentOrder/VisitSummary/Lobby/",
+      "h1": "סיכומי ביקור",
+      "filters": ["סינון לפי שנים", "חיפוש לפי שם / תחום"],
+      "contents": "Cards: date, attachment icon, member, clinician, specialty, 'זימון תור חדש' link; chevron opens the summary.",
+      "status": "V 2026-10-21"
+    },
+    "my_doctor": {
+      "path": "/sonline/MedicalFile/MyDoctor/",
+      "h1": "הרופא/ה שלי",
+      "contents": "Assigned doctor and specialty, 'לשינוי הרופא שלי' link, specialties, clinic details (address, phone, appointment line, fax), weekly hours table (ימים / שעות פעילות), 'לזימון תור' button.",
+      "write_controls": ["לשינוי הרופא שלי — change of family doctor, allowed only periodically"],
+      "status": "V 2026-10-21"
+    },
+    "vaccinations": {
+      "path": "/sonline/medicalfile/Vaccinations/Lobby/",
+      "h1": "חיסונים",
+      "contents": "'פנקס החיסונים שלי' with a PDF ('לצפייה') button, then one card per vaccine: name and date.",
+      "traps": ["H1 carries no member suffix — read the member from the card label 'חיסונים עבור <name>' or the switcher."],
+      "related": "For children, Tipat Halav (טיפת חלב) keeps a parallel record outside Maccabi.",
+      "status": "V 2026-10-21"
+    },
+    "edit_profile": {
+      "path": "/sonline/directorship/editinformation/profile/",
+      "h1": "עדכון פרטים אישיים",
+      "contents": "Member card (name, ID, clinic, insurance tier), English name fields, personalised-services and accessibility preferences, contact details further down.",
+      "status": "V 2026-10-21 (read only)"
+    },
+    "menu_only": {
+      "note": "Also in the side menu on 2026-10-21, not wrapped as skills yet: /sonline/medicalfile/documents/referrals/ (הפניות אישורים ודפי מידע), /sonline/medicalfile/Sensitivity (רגישות לתרופות), /sonline/medicalfile/ChildDevelopment/Lobby/, /sonline/directorship/ordermagneticcard/lobby/, /sonline/directorship/BabyRegistration/, /sonline/directorship/DebtPayment/, /sonline/directorship/CreditsAndDebits/DirectDebit/, plus medicalfile/summary, personalrecommendations and mailingsfromhospitals behind /go/ wrappers."
+    }
+  },
+  "public_pages": {
+    "public_appeal": {
+      "url": "https://www.maccabi4u.co.il/forms/public-appeal/",
+      "title": "פניות הציבור מכבי",
+      "session": "not required",
+      "use": "Public complaints / enquiries form — a second channel for following up items that stall inside the portal.",
+      "status": "V 2026-10-21 (page loads by plain fetch)"
+    },
+    "branch_finder": {
+      "url_template": "https://serguide.maccabi4u.co.il/heb/medicalcentres/medicalcentressearchresults/?City={city_code}&PageNumber={page}&Source=SearchPage",
+      "params": {
+        "City": "Israeli locality code (CBS סמל ישוב); 3000 = Jerusalem",
+        "PageNumber": "1-based results page",
+        "RequestId": "added by the site on redirect — omit it"
+      },
+      "access": "Browser only; a plain fetch returned a bot-wall page at HTTP 200.",
+      "status": "V 2026-10-21 (URL grammar); results page not parsed"
+    }
+  },
+  "conduct": {
+    "never": [
+      "submit any form, send any message, book/cancel an appointment, request a cardless-visit approval, change the doctor, or edit details without the user's explicit confirmation of that specific action in chat",
+      "open the travel-insurance redirect without confirmation — it shares medical data with a third party",
+      "click 'קראתי את ההודעה' (acknowledge) unless asked",
+      "write member names, ID numbers, request ids, hashes, doctor names or any record content into this repo",
+      "attempt to sign in, or handle credentials or one-time codes"
+    ]
+  }
+}
