@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "פרטים-אישיים",
+      "פרטי-התקשרות",
+      "עדכון-פרטים"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "personal-details",
+      "contact-details",
+      "update-details"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: עדכון פרטים אישיים",
+    "en": "Maccabi Online: Update Personal Details"
+  },
+  "display_description": {
+    "en": "View and (after confirmation) update personal and contact details in Maccabi Online (עדכון פרטים אישיים): English name, contact details, accessibility and service preferences. Use for 'update my phone number with Maccabi', 'change my address on Maccabi'. Unofficial; needs your signed-in Maccabi Online session in Chrome.",
+    "he": "צפייה בפרטים האישיים ופרטי ההתקשרות במכבי אונליין (עדכון פרטים אישיים) ועדכונם (לאחר אישור): שם באנגלית, פרטי התקשרות, העדפות נגישות ושירות. מתאים לבקשות כמו 'עדכן את מספר הטלפון שלי במכבי', 'שנה את הכתובת שלי במכבי'. לא רשמי; נדרש סשן מחובר שלך במכבי אונליין ב-Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

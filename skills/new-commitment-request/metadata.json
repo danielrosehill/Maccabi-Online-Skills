@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "התחייבות",
+      "טופס-17",
+      "בקשות"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "commitment",
+      "form-17",
+      "requests"
+    ]
+  },
+  "display_name": {
+    "en": "Maccabi Online: New Commitment Request",
+    "he": "מכבי אונליין: בקשת התחייבות חדשה"
+  },
+  "display_description": {
+    "he": "מתחיל בקשת התחייבות חדשה (בקשת התחייבות, טופס 17) במכבי אונליין: בחירת סוג השירות הנכון, מילוי הבקשה ושליחה לאחר אישור. השתמשו עבור 'לבקש התחייבות', 'אני צריך טופס 17 ל-MRI', 'התחייבות לניתוח'. לא רשמי; נדרשת הפעלה מחוברת שלך במכבי אונליין ב-Chrome.",
+    "en": "Start a new commitment request (בקשת התחייבות / hitchaivut, Form 17) in Maccabi Online: choose the correct service type, fill it in, submit after confirmation. Use for 'request a hitchaivut', 'I need a Form 17 for an MRI', 'commitment for surgery'. Unofficial; needs your signed-in Maccabi Online session in Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

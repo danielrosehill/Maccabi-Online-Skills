@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "הודעות-מרופאים",
+      "תיבת-דואר",
+      "בריאות"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "doctor-messages",
+      "inbox",
+      "healthcare"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: הודעות מרופאים",
+    "en": "Maccabi Online: Doctor Messages"
+  },
+  "display_description": {
+    "en": "Read the Maccabi Online inbox of requests to and messages from doctors and the clinic office (בקשות והודעות מרופאים/ות). Use for 'any messages from the doctor?', 'did the doctor answer?', 'check my Maccabi inbox'. Unofficial; needs your signed-in Maccabi Online session in Chrome.",
+    "he": "קריאת תיבת הדואר של מכבי אונליין: בקשות לרופאים ולמזכירות המרפאה והודעות מהם (בקשות והודעות מרופאים/ות). מתאים לשאלות כמו 'יש הודעות מהרופא?', 'הרופא ענה?', 'תבדוק את תיבת הדואר שלי במכבי'. לא רשמי; דורש סשן מחובר שלך במכבי אונליין בדפדפן Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

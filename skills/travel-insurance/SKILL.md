@@ -1,6 +1,8 @@
 ---
 name: travel-insurance
-description: Open Maccabi's travel-abroad insurance redirect (ביטוח נסיעות לחו"ל), which hands the member's medical record to the insurer's purchase flow. Only after explicit confirmation. Use for 'buy travel insurance through Maccabi'.
+description: 'Open Maccabi''s travel-abroad insurance redirect (ביטוח נסיעות לחו"ל), which hands the member''s medical record to the insurer''s purchase flow. Only after explicit confirmation. Use for ''buy travel insurance through Maccabi''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Travel insurance redirect

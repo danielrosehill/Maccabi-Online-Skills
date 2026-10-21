@@ -1,6 +1,8 @@
 ---
 name: upcoming-appointments
-description: List upcoming booked appointments in Maccabi Online (תורים עתידיים). Use for 'what appointments do I have', 'when is my next doctor's appointment', 'does my son have anything booked'. Cancelling is gated.
+description: 'List upcoming booked appointments in Maccabi Online (תורים עתידיים). Use for ''what appointments do I have'', ''when is my next doctor''s appointment'', ''does my son have anything booked''. Cancelling is gated.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Upcoming appointments

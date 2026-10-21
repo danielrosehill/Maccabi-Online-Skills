@@ -1,6 +1,8 @@
 ---
 name: medication-purchase-history
-description: Show the full medication purchase history in Maccabi Online — when each medicine was last dispensed and what was paid — useful for drugs with dispensing intervals or controlled medications. Use for 'when did I last pick up X', 'how much did I pay for X', 'purchase history'.
+description: 'Show the full medication purchase history in Maccabi Online — when each medicine was last dispensed and what was paid — useful for drugs with dispensing intervals or controlled medications. Use for ''when did I last pick up X'', ''how much did I pay for X'', ''purchase history''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Medication purchase history

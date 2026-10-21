@@ -1,6 +1,8 @@
 ---
 name: public-appeal
-description: Use Maccabi's public enquiries/complaints form (פניות הציבור, no login needed) to follow up on something stuck in the portal. Use for 'complain to Maccabi', 'escalate my request', 'contact Maccabi public enquiries'.
+description: 'Use Maccabi''s public enquiries/complaints form (פניות הציבור, no login needed) to follow up on something stuck in the portal. Use for ''complain to Maccabi'', ''escalate my request'', ''contact Maccabi public enquiries''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Public enquiries form

@@ -1,6 +1,8 @@
 ---
 name: update-personal-details
-description: View and (after confirmation) update personal and contact details in Maccabi Online (עדכון פרטים אישיים) — English name, contact details, accessibility and service preferences. Use for 'update my phone number with Maccabi', 'change my address on Maccabi'.
+description: 'View and (after confirmation) update personal and contact details in Maccabi Online (עדכון פרטים אישיים) — English name, contact details, accessibility and service preferences. Use for ''update my phone number with Maccabi'', ''change my address on Maccabi''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Update personal details

@@ -1,6 +1,8 @@
 ---
 name: refund-request
-description: Start a refund request (בקשה להחזר כספי) in Maccabi Online — the 11 service categories, the 6,000 ₪ per-invoice cap and the receipt/invoice requirements — and submit after confirmation. Use for 'claim a refund from Maccabi', 'get reimbursed for <service>'.
+description: 'Start a refund request (בקשה להחזר כספי) in Maccabi Online — the 11 service categories, the 6,000 ₪ per-invoice cap and the receipt/invoice requirements — and submit after confirmation. Use for ''claim a refund from Maccabi'', ''get reimbursed for [service]''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Refund request

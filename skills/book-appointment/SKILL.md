@@ -1,6 +1,8 @@
 ---
 name: book-appointment
-description: Start booking a new appointment in Maccabi Online (זימון תור חדש) — with a clinician seen in the last year or via the service search — and book only after confirmation. Use for 'book a doctor's appointment', 'get me an appointment with <specialty>', 'find a slot with my GP'.
+description: 'Start booking a new appointment in Maccabi Online (זימון תור חדש) — with a clinician seen in the last year or via the service search — and book only after confirmation. Use for ''book a doctor''s appointment'', ''get me an appointment with [specialty]'', ''find a slot with my GP''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Book an appointment

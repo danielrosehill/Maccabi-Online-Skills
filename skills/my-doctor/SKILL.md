@@ -1,6 +1,8 @@
 ---
 name: my-doctor
-description: Show the member's assigned family doctor in Maccabi Online (הרופא/ה שלי) — clinic address, phones, weekly opening hours — and, only after confirmation, start a change of doctor. Use for 'who is my doctor', 'when is the clinic open', 'change my GP'.
+description: 'Show the member''s assigned family doctor in Maccabi Online (הרופא/ה שלי) — clinic address, phones, weekly opening hours — and, only after confirmation, start a change of doctor. Use for ''who is my doctor'', ''when is the clinic open'', ''change my GP''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # My doctor

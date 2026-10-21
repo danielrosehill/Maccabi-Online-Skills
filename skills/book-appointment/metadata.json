@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "זימון-תור",
+      "רופאים",
+      "בריאות"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "appointment-booking",
+      "doctors",
+      "healthcare"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: זימון תור",
+    "en": "Maccabi Online: Book Appointment"
+  },
+  "display_description": {
+    "en": "Start booking a new appointment in Maccabi Online (זימון תור חדש), with a clinician seen in the last year or via the service search, and book only after confirmation. Use for 'book a doctor's appointment', 'get me an appointment with a specialist', 'find a slot with my GP'. Unofficial; needs your signed-in Maccabi Online session in Chrome.",
+    "he": "התחלת זימון תור חדש במכבי אונליין (זימון תור חדש), אצל מטפל/ת שביקרת אצלו/ה בשנה האחרונה או דרך חיפוש השירותים, וזימון רק לאחר אישור. מתאים לבקשות כמו 'תזמין לי תור לרופא', 'תשיג לי תור אצל רופא מומחה', 'תמצא תור פנוי אצל רופא המשפחה שלי'. לא רשמי; דורש סשן מחובר שלך במכבי אונליין בדפדפן Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

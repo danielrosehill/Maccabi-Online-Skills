@@ -31,6 +31,19 @@ It drives the user's signed-in Maccabi Online session through Claude in Chrome.
 - Not yet opened: the screens after the first choice in the new-request, booking,
   commitment and refund flows, plus travel insurance. Their status is `U` in the profile.
 
+## Skills IL (agentskills.co.il)
+
+All skills except `admin-rediscover-portal` are submitted to Skills IL, the Israeli skills
+directory (2026-10-21, category Health Services). Its format applies to every skill here:
+frontmatter only `name`, `description` (single-quoted, no `<` `>`, says "Use for/when"),
+`license`, `compatibility`; plus `metadata.json` (bilingual name, description, tags;
+`supported_agents: ["claude-code"]`, since everything runs through Claude in Chrome) and
+`SKILL_HE.md` (Hebrew body, same headings in the same order, code blocks byte-identical).
+**A change to a `SKILL.md` body goes into its `SKILL_HE.md` in the same commit**; bump
+`version` in its `metadata.json`. Check with `skillsil_check.py` and record submissions in
+`references/skillsil-submissions.json`, both in the software-publisher plugin
+(`skillsil-submit` skill). A `v*` tag makes a signed release (`.github/workflows/release.yml`).
+
 ## Shipping
 
 Bump `.claude-plugin/plugin.json` `version`, push, then update the entry in

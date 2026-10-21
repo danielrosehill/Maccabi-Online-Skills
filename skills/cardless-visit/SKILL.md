@@ -1,6 +1,8 @@
 ---
 name: cardless-visit
-description: Get a cardless-visit approval (ביקור ללא כרטיס) in Maccabi Online — valid 14 hours — for a forgotten/lost card, or when a clinician or the phone line asks the member to issue one so they can access the record. Requested only after confirmation.
+description: 'Get a cardless-visit approval (ביקור ללא כרטיס) in Maccabi Online — valid 14 hours — for a forgotten/lost card, or when a clinician or the phone line asks the member to issue one so they can access the record. Requested only after confirmation. Use for ''I forgot my Maccabi card'', ''the clinic asked me to approve a cardless visit''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Cardless visit approval

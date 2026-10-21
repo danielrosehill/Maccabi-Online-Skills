@@ -1,6 +1,8 @@
 ---
 name: new-commitment-request
-description: Start a new commitment request (בקשת התחייבות / hitchaivut, Form 17) in Maccabi Online — choose the correct service type, fill it in, submit after confirmation. Use for 'request a hitchaivut', 'I need a Form 17 for an MRI', 'commitment for surgery'.
+description: 'Start a new commitment request (בקשת התחייבות / hitchaivut, Form 17) in Maccabi Online — choose the correct service type, fill it in, submit after confirmation. Use for ''request a hitchaivut'', ''I need a Form 17 for an MRI'', ''commitment for surgery''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # New commitment request (hitchaivut / Form 17)

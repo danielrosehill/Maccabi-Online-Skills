@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "ביטוח-נסיעות",
+      "נסיעה-לחול",
+      "ביטוח",
+      "קופת-חולים"
+    ],
+    "en": [
+      "maccabi",
+      "travel-insurance",
+      "travel-abroad",
+      "insurance",
+      "health-fund"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: ביטוח נסיעות",
+    "en": "Maccabi Online: Travel Insurance"
+  },
+  "display_description": {
+    "he": "פתיחת ההפניה של מכבי לביטוח נסיעות לחו\"ל (ביטוח נסיעות לחו\"ל), שמעבירה את הרשומה הרפואית של החבר לתהליך הרכישה של חברת הביטוח. רק לאחר אישור מפורש. השתמשו עבור 'לקנות ביטוח נסיעות דרך מכבי'. לא רשמי; דורש הפעלה מחוברת שלכם במכבי אונליין בדפדפן Chrome.",
+    "en": "Open Maccabi's travel-abroad insurance redirect (ביטוח נסיעות לחו\"ל), which hands the member's medical record to the insurer's purchase flow. Only after explicit confirmation. Use for 'buy travel insurance through Maccabi'. Unofficial; needs your signed-in Maccabi Online session in Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

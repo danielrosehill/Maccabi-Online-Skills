@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "רופא-משפחה",
+      "שעות-מרפאה",
+      "החלפת-רופא"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "family-doctor",
+      "clinic-hours",
+      "change-doctor"
+    ]
+  },
+  "display_name": {
+    "en": "Maccabi Online: My Doctor",
+    "he": "מכבי אונליין: הרופא שלי"
+  },
+  "display_description": {
+    "he": "מציג את רופא המשפחה של המבוטח במכבי אונליין (הרופא/ה שלי): כתובת המרפאה, טלפונים, שעות פתיחה שבועיות, ורק לאחר אישור מתחיל החלפת רופא. השתמשו עבור 'מי הרופא שלי', 'מתי המרפאה פתוחה', 'להחליף רופא משפחה'. לא רשמי; נדרשת הפעלה מחוברת שלך במכבי אונליין ב-Chrome.",
+    "en": "Show the member's assigned family doctor in Maccabi Online (הרופא/ה שלי): clinic address, phones, weekly opening hours, and, only after confirmation, start a change of doctor. Use for 'who is my doctor', 'when is the clinic open', 'change my GP'. Unofficial; needs your signed-in Maccabi Online session in Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

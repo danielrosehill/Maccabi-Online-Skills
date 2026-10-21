@@ -1,6 +1,8 @@
 ---
 name: medications
-description: List current medications and prescriptions in Maccabi Online (התרופות והמרשמים) — valid prescriptions, ones due for renewal, expiries — and get the PDF report. Use for 'what are my current meds', 'when does my prescription expire', 'which prescriptions need renewing'.
+description: 'List current medications and prescriptions in Maccabi Online (התרופות והמרשמים) — valid prescriptions, ones due for renewal, expiries — and get the PDF report. Use for ''what are my current meds'', ''when does my prescription expire'', ''which prescriptions need renewing''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Medications and prescriptions

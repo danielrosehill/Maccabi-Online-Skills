@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "סניפים",
+      "מרכזים-רפואיים",
+      "מדריך-שירותים"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "branches",
+      "medical-centres",
+      "service-guide"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי: איתור סניף",
+    "en": "Maccabi: Find a Branch"
+  },
+  "display_description": {
+    "en": "Find Maccabi medical centres and branches by city via the public service guide (serguide.maccabi4u.co.il). Use for 'Maccabi branches in Jerusalem', 'nearest Maccabi clinic', 'find a Maccabi medical centre in a given city'. Unofficial; uses the public service guide in Chrome, no sign-in needed.",
+    "he": "איתור מרכזים רפואיים וסניפים של מכבי לפי עיר, דרך מדריך השירותים הציבורי (serguide.maccabi4u.co.il). מתאים לבקשות כמו 'סניפי מכבי בירושלים', 'מרפאת מכבי הקרובה', 'תמצא מרכז רפואי של מכבי בעיר מסוימת'. לא רשמי; משתמש במדריך השירותים הציבורי בדפדפן Chrome, ללא צורך בהתחברות."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

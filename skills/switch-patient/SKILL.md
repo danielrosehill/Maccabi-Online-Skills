@@ -1,6 +1,8 @@
 ---
 name: switch-patient
-description: Switch which family member's record Maccabi Online displays (מציג פרטים של). Use when the user asks about a child or other linked member, or says 'switch to <name>' / 'show my son's results'. Every other skill reads whichever member is selected.
+description: 'Switch which family member''s record Maccabi Online displays (מציג פרטים של). Use when the user asks about a child or other linked member, or says ''switch to [name]'' / ''show my son''s results''. Every other skill reads whichever member is selected.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Switch patient

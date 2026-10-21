@@ -1,6 +1,8 @@
 ---
 name: new-doctor-request
-description: Draft and (after confirmation) send a new request via Maccabi Online — a message to the doctor (prescription renewal, sick note, question, referral) or to the clinic office (Form 17, drug pre-approval, copies). Use for 'message my doctor', 'ask the doctor for a prescription renewal', 'request a sick note'.
+description: 'Draft and (after confirmation) send a new request via Maccabi Online — a message to the doctor (prescription renewal, sick note, question, referral) or to the clinic office (Form 17, drug pre-approval, copies). Use for ''message my doctor'', ''ask the doctor for a prescription renewal'', ''request a sick note''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # New request to the doctor or office

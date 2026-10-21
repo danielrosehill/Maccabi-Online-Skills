@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "חיסונים",
+      "פנקס-חיסונים",
+      "רשומה-רפואית"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "vaccinations",
+      "vaccination-booklet",
+      "medical-record"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: חיסונים",
+    "en": "Maccabi Online: Vaccinations"
+  },
+  "display_description": {
+    "en": "Read the vaccination record (חיסונים) in Maccabi Online and download the vaccination booklet PDF. Use for 'what vaccines has my son had', 'download my vaccination record', 'when was the last tetanus shot'. Unofficial; needs your signed-in Maccabi Online session in Chrome.",
+    "he": "קריאת רשומת החיסונים (חיסונים) במכבי אונליין והורדת פנקס החיסונים כקובץ PDF. מתאים לבקשות כמו 'אילו חיסונים קיבל הבן שלי', 'הורד את רשומת החיסונים שלי', 'מתי הייתה זריקת הטטנוס האחרונה'. לא רשמי; נדרש סשן מחובר שלך במכבי אונליין ב-Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

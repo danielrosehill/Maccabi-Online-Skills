@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "הודעה-לרופא",
+      "חידוש-מרשם",
+      "אישור-מחלה"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "doctor-message",
+      "prescription-renewal",
+      "sick-note"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: בקשה חדשה לרופא/ה",
+    "en": "Maccabi Online: New Doctor Request"
+  },
+  "display_description": {
+    "en": "Draft and (after confirmation) send a new request via Maccabi Online: a message to the doctor (prescription renewal, sick note, question, referral) or to the clinic office (Form 17, drug pre-approval, copies). Use for 'message my doctor', 'ask the doctor for a prescription renewal', 'request a sick note'. Unofficial; needs your signed-in Maccabi Online session in Chrome.",
+    "he": "ניסוח ושליחה (אחרי אישור) של בקשה חדשה דרך מכבי אונליין: הודעה לרופא/ה (חידוש מרשם, אישור מחלה, שאלה, הפניה) או למשרד המרפאה (טופס 17, אישור מוקדם לתרופה, העתקים). לשימוש עבור 'לשלוח הודעה לרופא', 'לבקש מהרופא חידוש מרשם', 'לבקש אישור מחלה'. לא רשמי; דורש סשן מחובר שלך במכבי אונליין ב־Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

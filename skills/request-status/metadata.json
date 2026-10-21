@@ -1,0 +1,34 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "התחייבות",
+      "טופס-17",
+      "סטטוס-בקשה",
+      "החזר-כספי"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "commitment",
+      "form-17",
+      "request-status",
+      "refund"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: סטטוס בקשות",
+    "en": "Maccabi Online: Request Status"
+  },
+  "display_description": {
+    "en": "Check the status of administrative requests in Maccabi Online: commitments (התחייבות / Form 17), refunds, medicine pre-approvals (החזרים אישורים והתחייבויות). Use for 'was my hitchaivut approved', 'status of my refund', 'any news on the Form 17'. Unofficial; needs your signed-in Maccabi Online session in Chrome.",
+    "he": "בדיקת הסטטוס של בקשות מנהלתיות במכבי אונליין: התחייבויות (טופס 17), החזרים כספיים, אישורים מוקדמים לתרופות (החזרים אישורים והתחייבויות). לשימוש עבור 'האם ההתחייבות שלי אושרה', 'מה הסטטוס של ההחזר שלי', 'יש חדש לגבי טופס 17'. לא רשמי; דורש סשן מחובר שלך במכבי אונליין ב־Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

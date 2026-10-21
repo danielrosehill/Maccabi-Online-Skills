@@ -1,6 +1,8 @@
 ---
 name: request-status
-description: Check the status of administrative requests in Maccabi Online — commitments (התחייבות / Form 17), refunds, medicine pre-approvals (החזרים אישורים והתחייבויות). Use for 'was my hitchaivut approved', 'status of my refund', 'any news on the Form 17'.
+description: 'Check the status of administrative requests in Maccabi Online — commitments (התחייבות / Form 17), refunds, medicine pre-approvals (החזרים אישורים והתחייבויות). Use for ''was my hitchaivut approved'', ''status of my refund'', ''any news on the Form 17''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Request status (hitchaivut, refunds, approvals)

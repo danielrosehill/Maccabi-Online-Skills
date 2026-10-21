@@ -1,6 +1,6 @@
 {
   "name": "maccabi-online-skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Unofficial skills for Maccabi Online, the Maccabi Healthcare Services (Israel) member portal: doctor messages, appointments, medications and purchase history, test results, visit summaries, vaccinations, commitments (hitchaivut), refunds, cardless visits and a family-member switcher. Drives the user's own signed-in Chrome. Writes are gated behind explicit confirmation. Includes an admin skill that re-maps the portal when its UI changes.",
   "author": {
     "name": "Daniel Rosehill",

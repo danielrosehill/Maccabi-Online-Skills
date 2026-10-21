@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "פניות-הציבור",
+      "תלונה",
+      "הסלמה"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "public-enquiries",
+      "complaint",
+      "escalation"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי: טופס פניות הציבור",
+    "en": "Maccabi: Public Enquiries Form"
+  },
+  "display_description": {
+    "en": "Use Maccabi's public enquiries/complaints form (פניות הציבור, no login needed) to follow up on something stuck in the portal. Use for 'complain to Maccabi', 'escalate my request', 'contact Maccabi public enquiries'. Unofficial; runs in Chrome via Claude in Chrome.",
+    "he": "שימוש בטופס הפניות והתלונות של מכבי (פניות הציבור, ללא צורך בהתחברות) כדי לעקוב אחרי עניין שנתקע בפורטל. לשימוש עבור 'להתלונן למכבי', 'להסלים את הבקשה שלי', 'לפנות לפניות הציבור של מכבי'. לא רשמי; פועל ב־Chrome דרך Claude in Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

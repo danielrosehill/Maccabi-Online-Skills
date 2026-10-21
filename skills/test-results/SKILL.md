@@ -1,6 +1,8 @@
 ---
 name: test-results
-description: Read lab and test results in Maccabi Online (תוצאות בדיקות) — all results, latest lab values, tracked tests — and open the result PDFs. Use for 'my blood test results', 'latest lab results', 'did the results come back'.
+description: 'Read lab and test results in Maccabi Online (תוצאות בדיקות) — all results, latest lab values, tracked tests — and open the result PDFs. Use for ''my blood test results'', ''latest lab results'', ''did the results come back''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Test results

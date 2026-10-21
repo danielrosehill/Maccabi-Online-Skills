@@ -1,6 +1,8 @@
 ---
 name: visit-summaries
-description: Find and download visit summaries (סיכומי ביקור) written by clinicians in Maccabi Online. Use for 'get the summary of my last doctor's visit', 'download the visit summary from <date>', 'what did the doctor write'.
+description: 'Find and download visit summaries (סיכומי ביקור) written by clinicians in Maccabi Online. Use for ''get the summary of my last doctor''s visit'', ''download the visit summary from [date]'', ''what did the doctor write''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Visit summaries

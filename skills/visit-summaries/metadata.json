@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "סיכומי-ביקור",
+      "רופא",
+      "מסמכים-רפואיים"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "visit-summaries",
+      "doctor",
+      "medical-documents"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: סיכומי ביקור",
+    "en": "Maccabi Online: Visit Summaries"
+  },
+  "display_description": {
+    "en": "Find and download visit summaries (סיכומי ביקור) written by clinicians in Maccabi Online. Use for 'get the summary of my last doctor's visit', 'download the visit summary from a given date', 'what did the doctor write'. Unofficial; needs your signed-in Maccabi Online session in Chrome.",
+    "he": "איתור והורדה של סיכומי ביקור (סיכומי ביקור) שכתבו אנשי צוות רפואי במכבי אונליין. מתאים לבקשות כמו 'הבא את הסיכום של הביקור האחרון שלי אצל הרופא', 'הורד את סיכום הביקור מתאריך מסוים', 'מה הרופא כתב'. לא רשמי; נדרש סשן מחובר שלך במכבי אונליין ב-Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

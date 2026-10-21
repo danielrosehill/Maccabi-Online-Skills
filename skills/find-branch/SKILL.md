@@ -1,6 +1,8 @@
 ---
 name: find-branch
-description: Find Maccabi medical centres / branches by city via the public service guide (serguide.maccabi4u.co.il). Use for 'Maccabi branches in Jerusalem', 'nearest Maccabi clinic', 'find a Maccabi medical centre in <city>'.
+description: 'Find Maccabi medical centres / branches by city via the public service guide (serguide.maccabi4u.co.il). Use for ''Maccabi branches in Jerusalem'', ''nearest Maccabi clinic'', ''find a Maccabi medical centre in [city]''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Find a branch / medical centre

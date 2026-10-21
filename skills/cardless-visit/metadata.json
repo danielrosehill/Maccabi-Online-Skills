@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "ביקור-ללא-כרטיס",
+      "כרטיס-מגנטי",
+      "בריאות"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "cardless-visit",
+      "member-card",
+      "healthcare"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: ביקור ללא כרטיס",
+    "en": "Maccabi Online: Cardless Visit"
+  },
+  "display_description": {
+    "en": "Get a cardless-visit approval (ביקור ללא כרטיס) in Maccabi Online, valid 14 hours, for a forgotten or lost card, or when a clinician or the phone line asks the member to issue one so they can access the record. Requested only after confirmation. Use when the card is missing or someone asks for a cardless approval. Unofficial; needs your signed-in Maccabi Online session in Chrome.",
+    "he": "הפקת אישור ביקור ללא כרטיס (ביקור ללא כרטיס) במכבי אונליין, בתוקף ל-14 שעות, לכרטיס שנשכח או אבד, או כשמטפל/ת או המוקד הטלפוני מבקשים מהמבוטח/ת להפיק אישור כדי לגשת לרשומה. האישור מתבקש רק לאחר אישור. מתאים כשהכרטיס חסר או כשמישהו מבקש אישור ביקור ללא כרטיס. לא רשמי; דורש סשן מחובר שלך במכבי אונליין בדפדפן Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

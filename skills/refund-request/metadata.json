@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "החזר-כספי",
+      "החזר-הוצאות",
+      "קבלות"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "refund",
+      "reimbursement",
+      "receipts"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: בקשת החזר כספי",
+    "en": "Maccabi Online: Refund Request"
+  },
+  "display_description": {
+    "en": "Start a refund request (בקשה להחזר כספי) in Maccabi Online, covering the 11 service categories, the 6,000 ₪ per-invoice cap and the receipt/invoice requirements, and submit after confirmation. Use for 'claim a refund from Maccabi', 'get reimbursed for a service'. Unofficial; needs your signed-in Maccabi Online session in Chrome.",
+    "he": "פתיחת בקשה להחזר כספי במכבי אונליין, כולל 11 קטגוריות השירות, תקרה של 6,000 ₪ לחשבונית ודרישות הקבלה והחשבונית, ושליחה אחרי אישור. לשימוש עבור 'לתבוע החזר ממכבי', 'לקבל החזר על שירות'. לא רשמי; דורש סשן מחובר שלך במכבי אונליין ב־Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

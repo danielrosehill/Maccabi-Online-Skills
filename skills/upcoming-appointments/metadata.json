@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "תורים",
+      "תורים-עתידיים",
+      "ביקורי-רופא",
+      "קופת-חולים"
+    ],
+    "en": [
+      "maccabi",
+      "appointments",
+      "upcoming-appointments",
+      "doctor-visits",
+      "health-fund"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: תורים עתידיים",
+    "en": "Maccabi Online: Upcoming Appointments"
+  },
+  "display_description": {
+    "he": "הצגת התורים העתידיים שנקבעו במכבי אונליין (תורים עתידיים). השתמשו עבור 'אילו תורים יש לי', 'מתי התור הבא שלי לרופא', 'האם לבן שלי נקבע משהו'. ביטול תור מחייב אישור. לא רשמי; דורש הפעלה מחוברת שלכם במכבי אונליין בדפדפן Chrome.",
+    "en": "List upcoming booked appointments in Maccabi Online (תורים עתידיים). Use for 'what appointments do I have', 'when is my next doctor's appointment', 'does my son have anything booked'. Cancelling is gated. Unofficial; needs your signed-in Maccabi Online session in Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

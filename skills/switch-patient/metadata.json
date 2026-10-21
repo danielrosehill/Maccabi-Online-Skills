@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "בני-משפחה",
+      "החלפת-מטופל",
+      "ילדים",
+      "קופת-חולים"
+    ],
+    "en": [
+      "maccabi",
+      "family-members",
+      "switch-patient",
+      "children",
+      "health-fund"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: החלפת מטופל",
+    "en": "Maccabi Online: Switch Patient"
+  },
+  "display_description": {
+    "he": "החלפת בן המשפחה שהרשומה שלו מוצגת במכבי אונליין (מציג פרטים של). השתמשו כשהמשתמש שואל על ילד או על חבר מקושר אחר, או אומר 'עבור ל-[שם]' / 'הצג את התוצאות של הבן שלי'. כל שאר המיומנויות קוראות את החבר שנבחר. לא רשמי; דורש הפעלה מחוברת שלכם במכבי אונליין בדפדפן Chrome.",
+    "en": "Switch which family member's record Maccabi Online displays (מציג פרטים של). Use when the user asks about a child or other linked member, or says 'switch to [name]' / 'show my son's results'. Every other skill reads whichever member is selected. Unofficial; needs your signed-in Maccabi Online session in Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

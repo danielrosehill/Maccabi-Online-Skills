@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "קופת-חולים",
+      "תרופות",
+      "היסטוריית-רכישות",
+      "בית-מרקחת"
+    ],
+    "en": [
+      "maccabi",
+      "health-fund",
+      "medications",
+      "purchase-history",
+      "pharmacy"
+    ]
+  },
+  "display_name": {
+    "en": "Maccabi Online: Medication Purchase History",
+    "he": "מכבי אונליין: היסטוריית רכישת תרופות"
+  },
+  "display_description": {
+    "he": "מציג את היסטוריית רכישת התרופות המלאה במכבי אונליין: מתי כל תרופה נופקה לאחרונה וכמה שולם עליה. שימושי לתרופות עם מרווח בין ניפוקים או לתרופות בפיקוח. השתמשו עבור 'מתי אספתי לאחרונה את X', 'כמה שילמתי על X', 'היסטוריית רכישות'. לא רשמי; נדרשת הפעלה מחוברת שלך במכבי אונליין ב-Chrome.",
+    "en": "Show the full medication purchase history in Maccabi Online: when each medicine was last dispensed and what was paid. Useful for drugs with dispensing intervals or controlled medications. Use for 'when did I last pick up X', 'how much did I pay for X', 'purchase history'. Unofficial; needs your signed-in Maccabi Online session in Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "health-services",
+  "tags": {
+    "he": [
+      "מכבי",
+      "תוצאות-בדיקות",
+      "תוצאות-מעבדה",
+      "בדיקות-דם",
+      "קופת-חולים"
+    ],
+    "en": [
+      "maccabi",
+      "test-results",
+      "lab-results",
+      "blood-tests",
+      "health-fund"
+    ]
+  },
+  "display_name": {
+    "he": "מכבי אונליין: תוצאות בדיקות",
+    "en": "Maccabi Online: Test Results"
+  },
+  "display_description": {
+    "he": "קריאת תוצאות מעבדה ובדיקות במכבי אונליין (תוצאות בדיקות): כל התוצאות, ערכי המעבדה האחרונים, בדיקות במעקב, ופתיחת קובצי ה-PDF של התוצאות. השתמשו עבור 'תוצאות בדיקות הדם שלי', 'תוצאות המעבדה האחרונות', 'האם התוצאות הגיעו'. לא רשמי; דורש הפעלה מחוברת שלכם במכבי אונליין בדפדפן Chrome.",
+    "en": "Read lab and test results in Maccabi Online (תוצאות בדיקות): all results, latest lab values, tracked tests, and open the result PDFs. Use for 'my blood test results', 'latest lab results', 'did the results come back'. Unofficial; needs your signed-in Maccabi Online session in Chrome."
+  },
+  "supported_agents": [
+    "claude-code"
+  ]
+}

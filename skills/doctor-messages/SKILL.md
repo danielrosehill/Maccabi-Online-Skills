@@ -1,6 +1,8 @@
 ---
 name: doctor-messages
-description: Read the Maccabi Online inbox of requests to and messages from doctors and the clinic office (בקשות והודעות מרופאים/ות). Use for 'any messages from the doctor?', 'did the doctor answer?', 'check my Maccabi inbox'.
+description: 'Read the Maccabi Online inbox of requests to and messages from doctors and the clinic office (בקשות והודעות מרופאים/ות). Use for ''any messages from the doctor?'', ''did the doctor answer?'', ''check my Maccabi inbox''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Doctor messages (inbox)

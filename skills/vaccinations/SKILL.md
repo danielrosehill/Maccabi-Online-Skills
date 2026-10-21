@@ -1,6 +1,8 @@
 ---
 name: vaccinations
-description: Read the vaccination record (חיסונים) in Maccabi Online and download the vaccination booklet PDF. Use for 'what vaccines has my son had', 'download my vaccination record', 'when was the last tetanus shot'.
+description: 'Read the vaccination record (חיסונים) in Maccabi Online and download the vaccination booklet PDF. Use for ''what vaccines has my son had'', ''download my vaccination record'', ''when was the last tetanus shot''.'
+license: MIT
+compatibility: Claude Code with Claude in Chrome and the user's own signed-in Maccabi Online session (online.maccabi4u.co.il). Unofficial; not affiliated with Maccabi. Reads profiles/maccabi-online.json and reference/ from this repository.
 ---
 
 # Vaccinations
